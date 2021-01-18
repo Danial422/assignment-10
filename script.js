@@ -1,4 +1,4 @@
-
+var userEmail = "";
 function onSubmitHandler() {
    //id validation
    var userId = document.getElementById("userid").value;
@@ -70,16 +70,19 @@ for (let index = 0; index < userId2.length; index++) {
     //country validation
     var userCountry = document.getElementById("country").value;
     for (let index = 0; index < userCountry.length; index++) {
+      if(userCountry.slice(index,index + 1) != "")
       {
-          exceptionHandler = document.getElementById("COUNTRY");
-          exceptionHandler.innerHTML = "<li> country is required </li>";
-           break;
+           exceptionHandler = document.getElementById("COUNTRY");
+           exceptionHandler.innerHTML = "<li> country is required </li>";
+           exceptionHandler = null;
+          break;
        }
     }
-    //zip code validation
+
+    ///zip code validation
      var userCode = document.getElementById("zcode").value;
     for (let index = 0; index < userCode.length; index++) {
-      if(userCode.slice(index,index + 1) == "")
+      if(userCode.slice(index,index + 1) != "")
       {
           exceptionHandler = document.getElementById("ZCODE");
           exceptionHandler.innerHTML = "<li> code is required </li>";
@@ -89,21 +92,28 @@ for (let index = 0; index < userId2.length; index++) {
     }
     }
     //email validation
-    var userEmail = document.getElementById("email").value;
-    for (let index = 0; index < userEmail.length; index++) {
-      if(userEmail.slice(index,index + 1) == "@")
-      {
-          exceptionHandler = document.getElementById("EMAIL");
-          exceptionHandler.innerHTML = "<li>please add valid email</li>";
-           exceptionHandler = null;
-           break;
+    var email = document.getElementById("email").value;
+    var flag = true
+    var output = ""
+    for (let index = 0; index < email.length; index++) {
+
+     if (email.slice(index, index + 1) === "@") {
+         flag = false;
+     }
+    }
+    if (flag) {
+    
+      output = output + "<p>*please add valid email<p>"        
     
     }
-    }
+    document.getElementById("EMAIL").innerHTML = output;
+    
+    
+    
     //gender validation
     var userGender = document.getElementById("i-2").value;
     for (let index = 0; index < userGender.length; index++) {
-      if(userGender == "")
+      if(userGender.slice(index,index + 1) != "")
       {
           exceptionHandler = document.getElementById("GENDER");
           exceptionHandler.innerHTML = "<li> it is required </li>";
@@ -115,7 +125,7 @@ for (let index = 0; index < userId2.length; index++) {
     //languge validation
     var userlanguage = document.getElementById("i-3").value;
     for (let index = 0; index < userlanguage.length; index++) {
-      if(userlanguage == "")
+      if(userlanguage.slice(index,index + 1) != "")
       {
           exceptionHandler = document.getElementById("LANG");
           exceptionHandler.innerHTML = "<li> required </li>";
@@ -126,7 +136,7 @@ for (let index = 0; index < userId2.length; index++) {
     //about validation
     var userAbout = document.getElementById("About").value;
     for (let index = 0; index < userAbout.length; index++) {
-      if(userAbout == "" )
+      if(userAbout.slice(index,index + 1) != "" )
       {
           exceptionHandler = document.getElementById("ABOUT");
           exceptionHandler.innerHTML = "<li> optional</li>";
@@ -135,7 +145,7 @@ for (let index = 0; index < userId2.length; index++) {
     
     }
   }
-    
-  }
+}
+  
   
   
