@@ -1,0 +1,128 @@
+#R-1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.new{
+    margin-left: 20px;
+}
+#R-2{
+    margin-left: 300px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+#Country{
+    padding-left: 0px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+#i-1{
+    margin-left: 80px;
+}
+#i-2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+#i-3{
+    margin-left: 50px;
+}
+#userid{
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#Pass{
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+#username{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 50px;
+}
+#address{
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 200px;
+}
+#zcode{
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 50px;
+}
+#email{
+    margin-left: 45px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 200px;
+}
+#About{
+    margin-left: 45px;
+    font-size: 20px;
+    box-sizing: 500px;
+    font-weight: 500;
+    padding-right: 250px;
+    padding-bottom: 200px;
+}
+#submit{
+    margin-left: 600px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blueviolet;
+}
+#submit:hover{
+    margin-left: 600px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    background-color: rgb(210, 177, 241);
+}
+@media screen and (max-width: 500px){
+    #R-1{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #R-2{
+        margin-left: 0px;
+        font-size: 20px;
+    }
+    #userid{
+        margin-left: 0px;
+        font-weight: 300;
+    }
+    #Pass{
+        margin-left: 0px;
+        font-weight: 300;
+    }
+    #username{
+        margin-left: 0px;
+        padding-right: 50px;
+    }
+    #address{
+        margin-left: 0px;
+        padding-right: 120px;
+    }
+    #email{
+        margin-left: 0px;
+        font-weight: 500;
+        padding-right: 120px;
+    }
+    #About{
+        margin-left: 10px;
+        font-weight: 500;
+        padding-right: 100px;
+        padding-bottom: 150px;
+    }
+    #submit{
+        margin-left: 150px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #i-3{
+        margin-left: 0px;
+    }
+}    

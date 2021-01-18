@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link href="./style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div>
+    <h1 id="R-1">Registration Form</h1>
+    <!---user id-->
+        <p id="R-2">User Id :
+        <input type="value" placeholder="Enter id" id="userid"></p>
+        <p id="USER" style="color:rgb(243, 23, 23); background-color: rgb(247, 235, 235);" ></p>
+    
+    <!---passsword--> 
+        <p id="R-2">Password :
+        <input type="text" placeholder="Enter Password" id="Pass"></p>
+        <p id="PASS" style="color:rgb(243, 23, 23); background-color: rgb(247, 235, 235);" ></p> 
+         <!---name-->
+        <p id="R-2">Name :
+        <input type="text" placeholder="Enter name" id="username"></p>
+        <p style="color:rgb(243, 23, 23); background-color: rgb(247, 235, 235);" id="NAME"></p>
+        <!---address-->
+        <p id="R-2">Address : <input type="text" placeholder="Enter address" id="address"></p>
+        <p style="color:rgb(243, 23, 23); background-color: rgb(247, 235, 235);" id="ADDRESS"></p>
+        <!---country-->
+            <p id="R-2">Country : 
+            <select id="Country">
+                <option>(Please select a country)</option>
+                <option value="pakistan">pakistan</option>
+                <option value="america">america</option>
+                <option value="saudia">saudia</option>
+            </select>
+        </p>
+        <p style="color:rgb(243, 23, 23); background-color: rgb(247, 235, 235);" id="COUNTRY"></p>
+        <!---code-->
+        <p id="R-2">ZIP Code: <input type="text" placeholder="Enter zip Code" id="zcode"></p>
+        <p style="color:rgb(243, 23, 23); background-color: rgb(247, 235, 235);" id="ZCODE"></p>
+        <!---email-->
+        <p id="R-2">Email : <input type="text" placeholder="Enter Email" id="email"></p>
+        <p style="color:rgb(243, 23, 23); background-color: rgb(247, 235, 235);" id="EMAIL"></p>
+        <!--gender-->
+        <p id="R-2">Sex :
+            <input type="radio" name="genre" value="Male" id="i-1" /><b id="i-2">Male</b>
+            <input type="radio" name="genre" value="Female" /> <b id="i-2">Female</b>
+        </p>
+        <p style="color:rgb(243, 23, 23); background-color: rgb(247, 235, 235);" id="GENDER"></p>  
+        <!---language-->  
+        <p id="R-2">Language :
+            <input type="checkbox" name="genre" value="English" checked="checked" id="i-3"/>
+            <b id="i-2">English</b> 
+            <input type="checkbox" name="genre" value="Non English"/>
+            <b id="i-2">Non English</b>
+        </p>
+        <p style="color:rgb(243, 23, 23); background-color: rgb(247, 235, 235);" id="LANG"></p>
+        <!---about-->
+        <p id="R-2">About : <input type="text" id="About"></p>
+        <p style="color:rgb(243, 23, 23); background-color: rgb(247, 235, 235);" id="ABOUT"></p>
+
+        <button onclick="return onSubmitHandler()" id="submit">Submit</button>
+        
+
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
